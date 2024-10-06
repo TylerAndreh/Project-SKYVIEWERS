@@ -1,0 +1,61 @@
+{
+	"name": "npc",
+	"plugin-id": "Sprite",
+	"sid": 875815276334618,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Follow",
+			"name": "Seguir",
+			"sid": 140532117664324
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 621,
+						"height": 765,
+						"originX": 0.428341384863124,
+						"originY": 0.45098039215686275,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 173601,
+						"collisionPoly": {
+							"points": [
+								0,
+								0.15947712418300652,
+								0.05958132045088567,
+								0.20915032679738563,
+								0.028985507246376812,
+								0.9333333333333333,
+								0,
+								0.930718954248366,
+								0,
+								0.7503267973856209,
+								0,
+								0.20522875816993463
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 733951131666292,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
