@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Videojuego en Constructor 3</title>
+    <!-- Enlazamos los estilos si es necesario -->
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <div id="gameContainer" style="width: 100%; height: 100vh;"></div>
+
+    <!-- Incluimos los archivos principales de configuración -->
+    <script src="projectfiles.uistate"></script>
+    <script src="project.uistate"></script>
+    <script src="project.c3proj"></script>
+    <script src="objecttypes.uistate"></script>
+
+    <!-- Incluimos el archivo JavaScript que ejecuta el juego generado por Constructor 3 -->
+    <script src="scripts/c3runtime.js"></script>
+
+    <script>
+        // Inicializa el juego
+        const canvas = document.getElementById("gameContainer");
+        cr_createRuntime({
+            canvas: canvas,
+            projectFiles: [
+                "project.c3proj", 
+                "objecttypes.uistate", 
+                "project.uistate", 
+                "projectfiles.uistate"
+            ],
+            folders: [
+                "Icons",
+                "timelines",
+                "eventSheets",
+                "images",
+                "layouts",
+                "objectTypes"
+            ]
+        });
+    </script>
+</body>
+</html>
